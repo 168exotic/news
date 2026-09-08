@@ -1,0 +1,80 @@
+name: News — publish 4× daily
+
+# Publish 1 news article per run, 4 runs/day = 3-4 posts/day (Thailand time)
+# UTC: 01:00, 05:00, 09:00, 13:00 = 08:00, 12:00, 16:00, 20:00 (UTC+7)
+
+on:
+  schedule:
+    - cron: '0 1,5,9,13 * * *'
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'Number of articles to publish (0 = full deploy only)'
+        required: false
+        default: '1'
+      full_deploy:
+        description: 'Run full initial deploy (nav, sitemap, all published articles)'
+        type: boolean
+        default: false
+
+concurrency:
+  group: news-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout news repo
+        uses: actions/checkout@v4
+        with:
+          path: news
+
+      - name: Checkout spaminthai repo
+        uses: actions/checkout@v4
+        with:
+          repository: 168exotic/spaminthai
+          token: ${{ secrets.SPAMINTHAI_DEPLOY_TOKEN }}
+          path: spaminthai
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Full deploy (initial setup)
+        if: github.event.inputs.full_deploy == 'true'
+        working-directory: news
+        run: node scripts/deploy-to-spaminthai.mjs --spaminthai-dir ../spaminthai
+
+      - name: Publish articles from queue
+        if: github.event.inputs.full_deploy != 'true'
+        working-directory: news
+        run: |
+          COUNT="${{ github.event.inputs.count || '1' }}"
+          node scripts/publish-daily.mjs --count "$COUNT" --spaminthai-dir ../spaminthai
+
+      - name: Commit and push news repo
+        working-directory: news
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes in news repo"
+          else
+            git commit -m "chore: publish news articles [skip ci]"
+            git push
+          fi
+
+      - name: Commit and push spaminthai repo
+        working-directory: spaminthai
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes in spaminthai repo"
+          else
+            git commit -m "chore: update news section [skip ci]"
+            git push
+          fi
