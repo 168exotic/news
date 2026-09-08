@@ -4,6 +4,9 @@ name: News — publish 4× daily
 # UTC: 01:00, 05:00, 09:00, 13:00 = 08:00, 12:00, 16:00, 20:00 (UTC+7)
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: '0 1,5,9,13 * * *'
   workflow_dispatch:
@@ -42,12 +45,12 @@ jobs:
           node-version: '20'
 
       - name: Full deploy (initial setup)
-        if: github.event.inputs.full_deploy == 'true'
+        if: github.event_name == 'push' || github.event.inputs.full_deploy == 'true'
         working-directory: news
         run: node scripts/deploy-to-spaminthai.mjs --spaminthai-dir ../spaminthai
 
       - name: Publish articles from queue
-        if: github.event.inputs.full_deploy != 'true'
+        if: github.event_name != 'push' && github.event.inputs.full_deploy != 'true'
         working-directory: news
         run: |
           COUNT="${{ github.event.inputs.count || '1' }}"
