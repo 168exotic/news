@@ -1,16 +1,15 @@
 #!/usr/bin/env node
 /**
  * Full deploy of /news section to spaminthai repo.
- * Applies patch files + generated news HTML + sitemap update.
+ * Only adds news content + nav links — never overwrites existing site files.
  */
-import { readFileSync, writeFileSync, cpSync, mkdirSync, existsSync, readdirSync } from 'fs';
+import { readFileSync, writeFileSync, cpSync, mkdirSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { execSync } from 'child_process';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
-const PATCH_DIR = join(ROOT, 'spaminthai-patch');
 
 function parseArgs() {
   const args = process.argv.slice(2);
@@ -23,10 +22,9 @@ function parseArgs() {
   return { spaminthaiDir, publishCount };
 }
 
-function copyDir(src, dest) {
-  if (!existsSync(src)) return;
-  mkdirSync(dest, { recursive: true });
-  cpSync(src, dest, { recursive: true, force: true });
+function patchNavLink(html, label, href, afterPattern) {
+  if (html.includes(`href="${href}"`)) return html;
+  return html.replace(afterPattern, (m) => `${m}\n      <a href="${href}" class="site-nav__link">${label}</a>`);
 }
 
 function patchIndexHtml(spaminthaiDir) {
@@ -40,11 +38,34 @@ function patchIndexHtml(spaminthaiDir) {
       '<a href="/check" class="site-nav__link site-nav__link--primary">เช็คเบอร์โทร</a>\n      <a href="/news" class="site-nav__link">ข่าวสาร</a>\n      <a href="/report"'
     );
     html = html.replace(
+      '<a href="/check" class="site-tab site-tab--active">เช็คเบอร์โทร</a>\n    <a href="#official"',
+      '<a href="/check" class="site-tab site-tab--active">เช็คเบอร์โทร</a>\n    <a href="/news" class="site-tab">ข่าวสาร</a>\n    <a href="#official"'
+    );
+    html = html.replace(
       '<a href="/download">ดาวน์โหลดแอป</a>\n      <a href="/blog">บทความ</a>',
       '<a href="/download">ดาวน์โหลดแอป</a>\n      <a href="/news">ข่าวสาร</a>\n      <a href="/blog">บทความ</a>'
     );
     writeFileSync(indexPath, html);
-    console.log('Patched index.html nav links');
+    console.log('Patched index.html — added ข่าวสาร link only');
+  }
+}
+
+function patchSiteChrome(spaminthaiDir) {
+  const chromePath = join(spaminthaiDir, 'assets/snippets/site-chrome.html');
+  if (!existsSync(chromePath)) return;
+  let html = readFileSync(chromePath, 'utf8');
+
+  if (!html.includes('href="/news"')) {
+    html = html.replace(
+      '<a href="/check" class="site-nav__link site-nav__link--primary">เช็คเบอร์โทร</a>\n      <a href="/report"',
+      '<a href="/check" class="site-nav__link site-nav__link--primary">เช็คเบอร์โทร</a>\n      <a href="/news" class="site-nav__link">ข่าวสาร</a>\n      <a href="/report"'
+    );
+    html = html.replace(
+      '<a href="/download">ดาวน์โหลดแอป</a>\n      <a href="/blog">บทความ</a>',
+      '<a href="/download">ดาวน์โหลดแอป</a>\n      <a href="/news">ข่าวสาร</a>\n      <a href="/blog">บทความ</a>'
+    );
+    writeFileSync(chromePath, html);
+    console.log('Patched site-chrome.html — added ข่าวสาร link only');
   }
 }
 
@@ -72,18 +93,10 @@ function main() {
     return;
   }
 
-  // Apply static patches
-  copyDir(join(PATCH_DIR, 'news'), join(spaminthaiDir, 'news'));
-  copyDir(join(PATCH_DIR, 'assets'), join(spaminthaiDir, 'assets'));
-  if (existsSync(join(PATCH_DIR, 'functions/api/sitemap.js'))) {
-    mkdirSync(join(spaminthaiDir, 'functions/api'), { recursive: true });
-    cpSync(join(PATCH_DIR, 'functions/api/sitemap.js'), join(spaminthaiDir, 'functions/api/sitemap.js'), { force: true });
-  }
-
   patchIndexHtml(spaminthaiDir);
+  patchSiteChrome(spaminthaiDir);
   patchApplyThemeChrome(spaminthaiDir);
 
-  // Regenerate news HTML from published articles
   execSync(`node ${join(ROOT, 'scripts/generate-news-html.mjs')} --output ${join(ROOT, 'spaminthai-output')}`, {
     stdio: 'inherit',
   });
@@ -91,7 +104,7 @@ function main() {
     stdio: 'inherit',
   });
 
-  console.log('Full deploy complete →', spaminthaiDir);
+  console.log('Deploy complete (additive only) →', spaminthaiDir);
 }
 
 main();
