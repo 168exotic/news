@@ -9,9 +9,13 @@ on:
   workflow_dispatch:
     inputs:
       count:
-        description: 'Number of articles to publish'
+        description: 'Number of articles to publish (0 = full deploy only)'
         required: false
         default: '1'
+      full_deploy:
+        description: 'Run full initial deploy (nav, sitemap, all published articles)'
+        type: boolean
+        default: false
 
 concurrency:
   group: news-publish
@@ -37,7 +41,13 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Full deploy (initial setup)
+        if: github.event.inputs.full_deploy == 'true'
+        working-directory: news
+        run: node scripts/deploy-to-spaminthai.mjs --spaminthai-dir ../spaminthai
+
       - name: Publish articles from queue
+        if: github.event.inputs.full_deploy != 'true'
         working-directory: news
         run: |
           COUNT="${{ github.event.inputs.count || '1' }}"
