@@ -1,0 +1,11 @@
+{
+  "name": "spaminthai-news",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "News content pipeline for spaminthai.com/news",
+  "scripts": {
+    "generate": "node scripts/generate-news-html.mjs",
+    "publish": "node scripts/publish-daily.mjs --count 1 --spaminthai-dir ./spaminthai"
+  }
+}
