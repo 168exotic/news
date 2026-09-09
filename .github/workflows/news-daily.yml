@@ -78,6 +78,13 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes in spaminthai repo"
           else
-            git commit -m "chore: update news section [skip ci]"
+            git commit -m "chore: update news section"
             git push
           fi
+
+      - name: Trigger Cloudflare Pages deploy
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.SPAMINTHAI_DEPLOY_TOKEN }}
+        run: |
+          gh workflow run deploy.yml --repo 168exotic/spaminthai --ref main || true
