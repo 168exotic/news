@@ -15,6 +15,7 @@ const PUBLISHED_DIR = join(ARTICLES_DIR, 'published');
 const DEFAULT_OUTPUT = join(ROOT, 'spaminthai-output');
 
 const SITE = 'https://spaminthai.com';
+const PER_PAGE = 6;
 
 const SITE_HEADER = `<header class="site-header">
   <div class="site-header__inner">
@@ -148,7 +149,7 @@ function renderArticle(article) {
 </head>
 <body>
 <article class="wrap">
-  <p class="crumb"><a href="/">หน้าแรก</a> · <a href="/news/">ข่าวสาร</a></p>
+  <p class="crumb"><a href="/">หน้าแรก</a> · <a href="/news-1">ข่าวสาร</a></p>
   <p class="meta">${formatThaiDate(article.date)}</p>
   <h1>${esc(article.title)}</h1>
   <p class="lead">${esc(article.lead)}</p>
@@ -170,20 +171,43 @@ function renderArticle(article) {
 </html>`;
 }
 
-function renderIndex(articles) {
+function renderPagination(page, totalPages) {
+  if (totalPages <= 1) return '';
+
+  const prev =
+    page > 1
+      ? `<a class="news-pagination__btn" href="/news-${page - 1}">← ก่อนหน้า</a>`
+      : `<span class="news-pagination__btn news-pagination__btn--disabled" aria-hidden="true">← ก่อนหน้า</span>`;
+  const next =
+    page < totalPages
+      ? `<a class="news-pagination__btn news-pagination__btn--primary" href="/news-${page + 1}">หน้าถัดไป →</a>`
+      : `<span class="news-pagination__btn news-pagination__btn--disabled" aria-hidden="true">หน้าถัดไป →</span>`;
+
+  return `<nav class="news-pagination" aria-label="เปลี่ยนหน้า">
+  ${prev}
+  <span class="news-pagination__info">หน้า ${page} / ${totalPages}</span>
+  ${next}
+</nav>`;
+}
+
+function renderIndexPage(articles, page, totalPages) {
   const sorted = [...articles].sort((a, b) => b.date.localeCompare(a.date));
-  const cards = sorted
+  const start = (page - 1) * PER_PAGE;
+  const pageArticles = sorted.slice(start, start + PER_PAGE);
+  const cards = pageArticles
     .map(
       (a) =>
         `<a class="card" href="/news/${a.slug}"><time datetime="${a.date}">${formatThaiDate(a.date)}</time><h2>${esc(a.title)}</h2><p>${esc(a.summary)}</p></a>`
     )
     .join('\n  ');
 
+  const pageUrl = `${SITE}/news-${page}`;
+  const titleSuffix = page > 1 ? ` (หน้า ${page})` : '';
   const jsonLd = JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'ข่าวสารคดีฉ้อโกง | SpamInThai',
-    url: `${SITE}/news`,
+    name: `ข่าวสารคดีฉ้อโกง | SpamInThai${titleSuffix}`,
+    url: pageUrl,
     inLanguage: 'th-TH',
     publisher: { '@type': 'Organization', name: 'SpamInThai', url: SITE },
   });
@@ -193,13 +217,13 @@ function renderIndex(articles) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ข่าวสารคดีฉ้อโกง & แก๊งคอลเซ็นเตอร์ | SpamInThai</title>
+<title>ข่าวสารคดีฉ้อโกง & แก๊งคอลเซ็นเตอร์${titleSuffix} | SpamInThai</title>
 <meta name="description" content="รวมข่าวคดีฉ้อโกงออนไลน์ แก๊งคอลเซ็นเตอร์ และการปราบปรามในไทย เรียบเรียงใหม่พร้อมอ้างอิงแหล่งที่มา อัปเดตทุกวัน">
 <meta name="keywords" content="ข่าวฉ้อโกง, แก๊งคอลเซ็นเตอร์, มิจฉาชีพ, ข่าวอาชญากรรมออนไลน์">
-<link rel="canonical" href="${SITE}/news">
-<meta property="og:title" content="ข่าวสารคดีฉ้อโกง & แก๊งคอลเซ็นเตอร์ | SpamInThai">
+<link rel="canonical" href="${pageUrl}">
+<meta property="og:title" content="ข่าวสารคดีฉ้อโกง & แก๊งคอลเซ็นเตอร์${titleSuffix} | SpamInThai">
 <meta property="og:description" content="รวมข่าวคดีฉ้อโกงออนไลน์และแก๊งคอลเซ็นเตอร์ เรียบเรียงใหม่พร้อมอ้างอิงแหล่งที่มา">
-<meta property="og:url" content="${SITE}/news">
+<meta property="og:url" content="${pageUrl}">
 <meta property="og:image" content="${SITE}/assets/og-image.png">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -213,6 +237,13 @@ function renderIndex(articles) {
 <style>
 .news-index .card time { display:block; font-size:0.85rem; color:var(--muted,#888); margin-bottom:4px; }
 .news-index .sub { color:var(--muted,#888); margin-bottom:24px; }
+.news-pagination { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:12px; margin-top:28px; padding-top:20px; border-top:1px solid var(--color-line,#e5e5e5); }
+.news-pagination__btn { display:inline-block; padding:10px 18px; border-radius:8px; border:1px solid var(--color-line,#e5e5e5); background:var(--color-surface,#fff); color:inherit; text-decoration:none; font-size:0.95rem; }
+.news-pagination__btn--primary { background:var(--color-primary,#2563eb); border-color:var(--color-primary,#2563eb); color:#fff; }
+.news-pagination__btn--disabled { opacity:0.4; cursor:default; }
+.news-pagination__btn:not(.news-pagination__btn--disabled):hover { border-color:var(--color-primary,#2563eb); text-decoration:none; }
+.news-pagination__btn--primary:hover { filter:brightness(1.05); }
+.news-pagination__info { font-size:0.9rem; color:var(--color-text-muted,#888); min-width:80px; text-align:center; }
 </style>
 </head>
 <body class="site-body">
@@ -223,10 +254,26 @@ ${SITE_HEADER}
 
   ${cards}
 
+  ${renderPagination(page, totalPages)}
 </main>
 ${SITE_FOOTER}
 <script src="/assets/site.js" defer></script>
 <script src="/assets/ga4.js" defer></script>
+</body>
+</html>`;
+}
+
+function renderNewsRedirect() {
+  return `<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="0;url=/news-1">
+<link rel="canonical" href="${SITE}/news-1">
+<title>ข่าวสาร | SpamInThai</title>
+</head>
+<body>
+<p>กำลังไปยัง <a href="/news-1">ข่าวสาร</a>...</p>
 </body>
 </html>`;
 }
@@ -281,11 +328,17 @@ function main() {
     writeFileSync(join(newsDir, `${article.slug}.html`), renderArticle(article));
   }
 
-  writeFileSync(join(newsDir, 'index.html'), renderIndex(unique));
+  const totalPages = Math.max(1, Math.ceil(unique.length / PER_PAGE));
+  for (let page = 1; page <= totalPages; page++) {
+    writeFileSync(join(output, `news-${page}.html`), renderIndexPage(unique, page, totalPages));
+  }
+  writeFileSync(join(newsDir, 'index.html'), renderNewsRedirect());
 
   const manifest = {
     generatedAt: new Date().toISOString(),
     slugs: unique.map((a) => a.slug).sort(),
+    pageCount: totalPages,
+    perPage: PER_PAGE,
   };
   writeFileSync(join(output, 'news-manifest.json'), JSON.stringify(manifest, null, 2));
   writeFileSync(join(ROOT, 'news-manifest.json'), JSON.stringify(manifest, null, 2));
