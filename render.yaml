@@ -1,0 +1,17 @@
+# Static SEO landing pages for Shopee shop (see shop-seo/config.json)
+services:
+  - type: web
+    name: shop-seo-landing
+    runtime: static
+    buildCommand: npm run shop-seo:build
+    staticPublishPath: shop-seo/dist
+    envVars:
+      - key: SITE_URL
+        value: https://shop-seo-landing.onrender.com
+    headers:
+      - path: /*
+        name: X-Robots-Tag
+        value: index, follow
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=3600
