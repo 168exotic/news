@@ -1,0 +1,17 @@
+# Static SEO landing pages for Shopee shop (see shop-seo/config.json)
+services:
+  - type: web
+    name: shop-seo-landing
+    runtime: static
+    buildCommand: node shop-seo/scripts/build.mjs
+    staticPublishPath: shop-seo/dist
+    envVars:
+      - key: SITE_URL
+        sync: false
+    headers:
+      - path: /*
+        name: X-Robots-Tag
+        value: index, follow
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=3600
