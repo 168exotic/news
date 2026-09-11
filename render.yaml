@@ -3,11 +3,11 @@ services:
   - type: web
     name: shop-seo-landing
     runtime: static
-    buildCommand: node shop-seo/scripts/build.mjs
+    buildCommand: npm run shop-seo:build
     staticPublishPath: shop-seo/dist
     envVars:
       - key: SITE_URL
-        sync: false
+        value: https://shop-seo-landing.onrender.com
     headers:
       - path: /*
         name: X-Robots-Tag
