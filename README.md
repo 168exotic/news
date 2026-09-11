@@ -65,7 +65,7 @@ node scripts/publish-daily.mjs --count 1 --spaminthai-dir ../spaminthai
 
 ## SEO ร้าน Shopee (landing page)
 
-โฟลเดอร์ `shop-seo/` สร้างหน้าเว็บ SEO ภายนอก (Google/Bing) สำหรับร้าน **Orta official** / แบรนด์ **ORTA (โอต๊ะ)** — ลิงก์ Shopee: `https://s.shopee.co.th/2LYAaOVXKc`
+โฟลเดอร์ `shop-seo/` สร้างหน้าเว็บ SEO ภายนอก (Google/Bing) สำหรับร้าน **Orta official** / แบรนด์ **ORTA (โอต๊ะ)** — ร้าน Shopee: [https://shopee.co.th/ortaofficial](https://shopee.co.th/ortaofficial)
 
 - แก้ข้อมูลร้านใน `shop-seo/config.json` (สินค้า, คีย์เวิร์ด, รูปใน `shop-seo/assets/`)
 - คำแนะนำชื่อ/รายละเอียดใน Shopee Seller Centre: `shop-seo/shopee-listing-seo.json`

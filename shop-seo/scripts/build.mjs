@@ -14,6 +14,7 @@ const ASSETS = join(ROOT, 'assets');
 const config = JSON.parse(readFileSync(join(ROOT, 'config.json'), 'utf8'));
 
 const SITE = (process.env.SITE_URL || config.defaultSiteUrl).replace(/\/$/, '');
+const SHOPEE_SHOP = config.shopeeShopUrl || config.shopeeShortUrl;
 
 function esc(s) {
   return String(s)
@@ -90,7 +91,7 @@ a{color:#fdba74}
 ${body}
 <footer>
 <p>หน้านี้ช่วย SEO ให้ค้นหาแบรนด์ ${esc(config.brandName)} (${esc(config.brandNameTh || '')}) และร้าน Shopee ได้ง่ายขึ้น — สั่งซื้อและชำระเงินบน Shopee Thailand</p>
-<p><a href="${esc(config.shopeeShortUrl)}" rel="noopener sponsored">ร้าน Orta official บน Shopee</a>${config.officialWebsite ? ` · <a href="${esc(config.officialWebsite)}" rel="noopener">เว็บไซต์ ${esc(config.brandName)}</a>` : ''} · <a href="${esc(SITE)}/">หน้าแรก</a></p>
+<p><a href="${esc(SHOPEE_SHOP)}" rel="noopener sponsored">shopee.co.th/ortaofficial</a>${config.shopeeShortUrl && config.shopeeShortUrl !== SHOPEE_SHOP ? ` · <a href="${esc(config.shopeeShortUrl)}" rel="noopener sponsored">ลิงก์สั้น</a>` : ''}${config.officialWebsite ? ` · <a href="${esc(config.officialWebsite)}" rel="noopener">เว็บไซต์ ${esc(config.brandName)}</a>` : ''} · <a href="${esc(SITE)}/">หน้าแรก</a></p>
 </footer>
 </div>
 </body>
@@ -99,7 +100,7 @@ ${body}
 
 function ctaBlock(primaryLabel = 'ช้อปเลยบน Shopee') {
   return `<div class="cta-row">
-  <a class="btn btn-primary" href="${esc(config.shopeeShortUrl)}" rel="noopener sponsored">${esc(primaryLabel)}</a>
+  <a class="btn btn-primary" href="${esc(SHOPEE_SHOP)}" rel="noopener sponsored">${esc(primaryLabel)}</a>
   <a class="btn btn-secondary" href="${esc(SITE)}/sitemap.xml">Sitemap</a>
 </div>`;
 }
@@ -128,7 +129,8 @@ function buildIndex() {
     .map((f) => `<div class="card"><h2>${esc(f.q)}</h2><p>${esc(f.a)}</p></div>`)
     .join('\n');
 
-  const sameAs = [config.shopeeShortUrl];
+  const sameAs = [SHOPEE_SHOP];
+  if (config.shopeeShortUrl && config.shopeeShortUrl !== SHOPEE_SHOP) sameAs.push(config.shopeeShortUrl);
   if (config.officialWebsite) sameAs.push(config.officialWebsite);
 
   const jsonLd = {
@@ -143,7 +145,8 @@ function buildIndex() {
       {
         '@type': 'Store',
         name: config.shopName,
-        url: config.shopeeShortUrl,
+        url: SHOPEE_SHOP,
+        identifier: config.shopeeShopUsername,
         description: config.about,
         brand: { '@type': 'Brand', name: config.brandName },
         sameAs,
@@ -214,7 +217,7 @@ function buildProduct(p) {
         url: canonical,
         offers: {
           '@type': 'Offer',
-          url: p.shopeeUrl || config.shopeeShortUrl,
+          url: p.shopeeUrl || SHOPEE_SHOP,
           availability: 'https://schema.org/InStock',
           seller: { '@type': 'Organization', name: config.shopName },
         },
@@ -236,7 +239,7 @@ function buildProduct(p) {
   <p class="lead">${esc(p.description)}</p>
   ${p.image ? `<img class="hero-img" src="${esc(p.image)}" alt="${esc(p.name)}" width="1200" height="675">` : ''}
   <div class="cta-row">
-    <a class="btn btn-primary" href="${esc(p.shortUrl || p.shopeeUrl || config.shopeeShortUrl)}" rel="noopener sponsored">ซื้อบน Shopee</a>
+    <a class="btn btn-primary" href="${esc(p.shortUrl || p.shopeeUrl || SHOPEE_SHOP)}" rel="noopener sponsored">ซื้อบน Shopee</a>
     <a class="btn btn-secondary" href="${esc(SITE)}/">กลับหน้าแรก</a>
   </div>
 </header>

@@ -2,6 +2,8 @@
   "shopName": "Orta official ร้านค้าอย่างเป็นทางการ",
   "brandName": "ORTA",
   "brandNameTh": "โอต๊ะ",
+  "shopeeShopUrl": "https://shopee.co.th/ortaofficial",
+  "shopeeShopUsername": "ortaofficial",
   "shopeeShortUrl": "https://s.shopee.co.th/2LYAaOVXKc",
   "officialWebsite": "https://ortathailand.com/",
   "locale": "th-TH",
@@ -13,6 +15,8 @@
     "ORTA",
     "โอต๊ะ",
     "Orta official",
+    "ortaofficial",
+    "shopee.co.th/ortaofficial",
     "ชาไทยสำเร็จรูป",
     "ชาไทยพร้อมชง",
     "ชาไทยสไตล์ภูเก็ต",
@@ -39,7 +43,7 @@
       "name": "ORTA Instant Thai Tea Mix ชาไทยสไตล์ภูเก็ต",
       "category": "ชาไทย",
       "image": "/assets/thai-tea-hero.jpg",
-      "shopeeUrl": "https://s.shopee.co.th/2LYAaOVXKc",
+      "shopeeUrl": "https://shopee.co.th/ortaofficial",
       "shortUrl": "https://s.shopee.co.th/2LYAaOVXKc",
       "description": "ชาไทยพร้อมชงดื่ม สไตล์ภูเก็ต หอมกลิ่นชาเข้มข้น หวาน มัน กำลังดี 1 ถุง 15 ซอง (450 g / ซองละ 30 g)",
       "highlights": [
@@ -55,7 +59,7 @@
       "name": "เมนูชาไทย ORTA ทำได้ง่ายที่บ้าน",
       "category": "ไอเดียเมนู",
       "image": "/assets/thai-tea-menus.jpg",
-      "shopeeUrl": "https://s.shopee.co.th/2LYAaOVXKc",
+      "shopeeUrl": "https://shopee.co.th/ortaofficial",
       "description": "ชาไทยโอต๊ะทำเมนูได้หลากหลาย — ชาไทยเย็น ชาไทยปั่น ชาไทยไข่มุก ชาไทยร้อน และบิงซูชาไทย",
       "highlights": [
         "ชาไทยเย็น / Thai Tea Iced",
@@ -70,7 +74,7 @@
       "name": "ORTA Coffee & Tea — กาแฟและชาครบในร้าน",
       "category": "กาแฟและชา",
       "image": "/assets/shop-banner.jpg",
-      "shopeeUrl": "https://s.shopee.co.th/2LYAaOVXKc",
+      "shopeeUrl": "https://shopee.co.th/ortaofficial",
       "description": "ครบทุกความอร่อยจากโอต๊ะ: ชาไทย กาแฟ 3in1 ชาดำ กาแฟดำ และกาแฟผสมชาไทย ในร้าน Orta official บน Shopee",
       "highlights": [
         "Instant Thai Tea Mix และชาไทยกล่อง",
@@ -84,7 +88,7 @@
   "faq": [
     {
       "q": "ร้าน Orta official อยู่ที่ไหน?",
-      "a": "สั่งซื้อได้ที่ร้าน Orta official บน Shopee Thailand ผ่านลิงก์ร้านบนหน้านี้ แบรนด์ ORTA (โอต๊ะ) มีเว็บไซต์อย่างเป็นทางการที่ ortathailand.com"
+      "a": "สั่งซื้อได้ที่ https://shopee.co.th/ortaofficial (ร้าน Orta official) แบรนด์ ORTA (โอต๊ะ) มีเว็บไซต์อย่างเป็นทางการที่ ortathailand.com"
     },
     {
       "q": "ชาไทย ORTA ชงยังไง?",
