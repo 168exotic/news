@@ -2,35 +2,35 @@
 
 ## วัน 1 — Facebook / กลุ่มซื้อขาย
 
-🔥 สินค้าขายดีอันดับ 1
-คุณภาพดี ใช้งานได้จริง คุ้มราคา
-💰 เริ่มต้นหลักสิบ
+🔥 ชาไทยปรุงสำเร็จชนิดผง ตราโอต๊ะ สไตล์ภูเก็ต (15 ซอง/ถุง)
+คัดสรรชาคุณภาพ Ceylon & Oolong หอมมันกลมกล่อม รสชาติไทยแท้ ชงร้อนและเย็นได้
+💰 ซื้อเป็นถุง 15 ซอง คุ้มกว่าซื้อทีละแก้ว
 
 ✅ สั่งใน Shopee ปลอดภัย มีระบบคืนเงิน
 👉 https://s.shopee.co.th/qjVyIXVuU?utm_source=facebook&utm_medium=group&utm_campaign=organic_week_d1
 
-#ShopeeTH #ช้อปออนไลน์ #ของดีบอกต่อ #ShopeeFreeShipping
+#Orta #โอต๊ะ #ชาไทย #ชาไทยภูเก็ต #PhuketStyle #ShopeeTH #ของฝากภูเก็ต
 
 ---
 
 ## วัน 2 — LINE OpenChat / สตอรี่
 
-ใครกำลังหา โปรโมชัน แนะนำตัวนี้เลย
-「สินค้าโปรโมชันพิเศษ」— ลดราคาช่วงนี้ จำกัดจำนวน
+ใครกำลังหา ชาไทยเย็น แนะนำตัวนี้เลย
+「ชาไทยโอต๊ะ แบบเย็น (สูตรแนะนำจากร้าน)」— ใส่น้ำร้อน 120 ml ต่อ 1 ซอง คนให้เข้ากัน ใส่น้ำแข็งและนม — ได้ชาไทยเชิดแบบร้าน
 
-ช้อปที่ร้าน ร้านค้าของคุณบน Shopee
+ช้อปที่ร้าน Orta Official
 https://s.shopee.co.th/qjVyIXVuU?utm_source=line&utm_medium=social&utm_campaign=organic_week_d2
 
-#ShopeeTH #ช้อปออนไลน์ #ของดีบอกต่อ
+#Orta #โอต๊ะ #ชาไทย
 
 ---
 
 ## วัน 3 — TikTok / Reels (คำบรรยาย)
 
-📦 ส่งจาก Shopee | ร้านค้าของคุณบน Shopee
+📦 ส่งจาก Shopee | Orta Official
 
-สินค้าใหม่ล่าสุด
-มาใหม่ในร้าน ทดลองแล้วชอบ
+ชาไทยโอต๊ะ แบบร้อน
+ชงร้อน 180 ml ต่อซอง หอมชาเข้ม หวานมันนุ่ม เหมาะเช้า–บ่าย
 
 กดลิงก์ร้าน 👇
 https://s.shopee.co.th/qjVyIXVuU?utm_source=tiktok&utm_medium=video&utm_campaign=organic_week_d3
@@ -39,13 +39,13 @@ https://s.shopee.co.th/qjVyIXVuU?utm_source=tiktok&utm_medium=video&utm_campaign
 
 ## วัน 4 — X (Twitter)
 
-ฝากติดตามร้าน ร้านค้าของคุณบน Shopee บน Shopee
-ของดี ราคาคุ้ม ส่งไว มีประกัน Shopee
+ฝากติดตามร้าน Orta Official บน Shopee
+ชาไทยตราโอต๊ะ สไตล์ภูเก็ต — หอมกลิ่นชาเข้มข้น หวานมันกำลังดี ชงร้อน–เย็นได้
 
 🛒 รวมสินค้าขายดี + โปรอัปเดตทุกวัน
 https://s.shopee.co.th/qjVyIXVuU?utm_source=twitter&utm_medium=social&utm_campaign=organic_week_d4
 
-#ShopeeTH #ช้อปออนไลน์ #ของดีบอกต่อ #ShopeeFreeShipping
+#Orta #โอต๊ะ #ชาไทย #ชาไทยภูเก็ต #PhuketStyle #ShopeeTH #ของฝากภูเก็ต
 
 ---
 
@@ -53,42 +53,42 @@ https://s.shopee.co.th/qjVyIXVuU?utm_source=twitter&utm_medium=social&utm_campai
 
 รีวิวจากร้าน (ยังไม่มีรีวิวลูกค้า? ใส่รูปจริง + วิดีโอสั้นใน Shopee Live แทนข้อความนี้)
 
-สินค้าโปรโมชันพิเศษ: ลดราคาช่วงนี้ จำกัดจำนวน
+ชาไทยโอต๊ะ แบบเย็น (สูตรแนะนำจากร้าน): ใส่น้ำร้อน 120 ml ต่อ 1 ซอง คนให้เข้ากัน ใส่น้ำแข็งและนม — ได้ชาไทยเชิดแบบร้าน
 ช้อป: https://s.shopee.co.th/qjVyIXVuU?utm_source=shopee&utm_medium=feed&utm_campaign=organic_week_d5
 
 ---
 
 ## วัน 6 — Facebook / กลุ่มซื้อขาย
 
-🔥 สินค้าใหม่ล่าสุด
-มาใหม่ในร้าน ทดลองแล้วชอบ
-💰 ราคาเปิดตัว
+🔥 ชาไทยโอต๊ะ แบบร้อน
+ชงร้อน 180 ml ต่อซอง หอมชาเข้ม หวานมันนุ่ม เหมาะเช้า–บ่าย
+💰 อุ่นไอใน rainy day ไม่ต้องออกไปซื้อข้างนอก
 
 ✅ สั่งใน Shopee ปลอดภัย มีระบบคืนเงิน
 👉 https://s.shopee.co.th/qjVyIXVuU?utm_source=facebook&utm_medium=group&utm_campaign=organic_week_d6
 
-#ShopeeTH #ช้อปออนไลน์ #ของดีบอกต่อ #ShopeeFreeShipping
+#Orta #โอต๊ะ #ชาไทย #ชาไทยภูเก็ต #PhuketStyle #ShopeeTH #ของฝากภูเก็ต
 
 ---
 
 ## วัน 7 — LINE OpenChat / สตอรี่
 
-ใครกำลังหา ของใช้ในบ้าน แนะนำตัวนี้เลย
-「สินค้าขายดีอันดับ 1」— คุณภาพดี ใช้งานได้จริง คุ้มราคา
+ใครกำลังหา ชาไทยสำเร็จรูป แนะนำตัวนี้เลย
+「ชาไทยปรุงสำเร็จชนิดผง ตราโอต๊ะ สไตล์ภูเก็ต (15 ซอง/ถุง)」— คัดสรรชาคุณภาพ Ceylon & Oolong หอมมันกลมกล่อม รสชาติไทยแท้ ชงร้อนและเย็นได้
 
-ช้อปที่ร้าน ร้านค้าของคุณบน Shopee
+ช้อปที่ร้าน Orta Official
 https://s.shopee.co.th/qjVyIXVuU?utm_source=line&utm_medium=social&utm_campaign=organic_week_d7
 
-#ShopeeTH #ช้อปออนไลน์ #ของดีบอกต่อ
+#Orta #โอต๊ะ #ชาไทย
 
 ---
 
 ## วัน 8 — TikTok / Reels (คำบรรยาย)
 
-📦 ส่งจาก Shopee | ร้านค้าของคุณบน Shopee
+📦 ส่งจาก Shopee | Orta Official
 
-สินค้าโปรโมชันพิเศษ
-ลดราคาช่วงนี้ จำกัดจำนวน
+ชาไทยโอต๊ะ แบบเย็น (สูตรแนะนำจากร้าน)
+ใส่น้ำร้อน 120 ml ต่อ 1 ซอง คนให้เข้ากัน ใส่น้ำแข็งและนม — ได้ชาไทยเชิดแบบร้าน
 
 กดลิงก์ร้าน 👇
 https://s.shopee.co.th/qjVyIXVuU?utm_source=tiktok&utm_medium=video&utm_campaign=organic_week_d8
@@ -97,13 +97,13 @@ https://s.shopee.co.th/qjVyIXVuU?utm_source=tiktok&utm_medium=video&utm_campaign
 
 ## วัน 9 — X (Twitter)
 
-ฝากติดตามร้าน ร้านค้าของคุณบน Shopee บน Shopee
-ของดี ราคาคุ้ม ส่งไว มีประกัน Shopee
+ฝากติดตามร้าน Orta Official บน Shopee
+ชาไทยตราโอต๊ะ สไตล์ภูเก็ต — หอมกลิ่นชาเข้มข้น หวานมันกำลังดี ชงร้อน–เย็นได้
 
 🛒 รวมสินค้าขายดี + โปรอัปเดตทุกวัน
 https://s.shopee.co.th/qjVyIXVuU?utm_source=twitter&utm_medium=social&utm_campaign=organic_week_d9
 
-#ShopeeTH #ช้อปออนไลน์ #ของดีบอกต่อ #ShopeeFreeShipping
+#Orta #โอต๊ะ #ชาไทย #ชาไทยภูเก็ต #PhuketStyle #ShopeeTH #ของฝากภูเก็ต
 
 ---
 
@@ -111,42 +111,42 @@ https://s.shopee.co.th/qjVyIXVuU?utm_source=twitter&utm_medium=social&utm_campai
 
 รีวิวจากร้าน (ยังไม่มีรีวิวลูกค้า? ใส่รูปจริง + วิดีโอสั้นใน Shopee Live แทนข้อความนี้)
 
-สินค้าขายดีอันดับ 1: คุณภาพดี ใช้งานได้จริง คุ้มราคา
+ชาไทยปรุงสำเร็จชนิดผง ตราโอต๊ะ สไตล์ภูเก็ต (15 ซอง/ถุง): คัดสรรชาคุณภาพ Ceylon & Oolong หอมมันกลมกล่อม รสชาติไทยแท้ ชงร้อนและเย็นได้
 ช้อป: https://s.shopee.co.th/qjVyIXVuU?utm_source=shopee&utm_medium=feed&utm_campaign=organic_week_d10
 
 ---
 
 ## วัน 11 — Facebook / กลุ่มซื้อขาย
 
-🔥 สินค้าโปรโมชันพิเศษ
-ลดราคาช่วงนี้ จำกัดจำนวน
-💰 โปรวันนี้เท่านั้น
+🔥 ชาไทยโอต๊ะ แบบเย็น (สูตรแนะนำจากร้าน)
+ใส่น้ำร้อน 120 ml ต่อ 1 ซอง คนให้เข้ากัน ใส่น้ำแข็งและนม — ได้ชาไทยเชิดแบบร้าน
+💰 ทำเองที่บ้าน รสชาติคงที่ทุกแก้ว
 
 ✅ สั่งใน Shopee ปลอดภัย มีระบบคืนเงิน
 👉 https://s.shopee.co.th/qjVyIXVuU?utm_source=facebook&utm_medium=group&utm_campaign=organic_week_d11
 
-#ShopeeTH #ช้อปออนไลน์ #ของดีบอกต่อ #ShopeeFreeShipping
+#Orta #โอต๊ะ #ชาไทย #ชาไทยภูเก็ต #PhuketStyle #ShopeeTH #ของฝากภูเก็ต
 
 ---
 
 ## วัน 12 — LINE OpenChat / สตอรี่
 
-ใครกำลังหา สินค้าใหม่ แนะนำตัวนี้เลย
-「สินค้าใหม่ล่าสุด」— มาใหม่ในร้าน ทดลองแล้วชอบ
+ใครกำลังหา ชาไทยร้อน แนะนำตัวนี้เลย
+「ชาไทยโอต๊ะ แบบร้อน」— ชงร้อน 180 ml ต่อซอง หอมชาเข้ม หวานมันนุ่ม เหมาะเช้า–บ่าย
 
-ช้อปที่ร้าน ร้านค้าของคุณบน Shopee
+ช้อปที่ร้าน Orta Official
 https://s.shopee.co.th/qjVyIXVuU?utm_source=line&utm_medium=social&utm_campaign=organic_week_d12
 
-#ShopeeTH #ช้อปออนไลน์ #ของดีบอกต่อ
+#Orta #โอต๊ะ #ชาไทย
 
 ---
 
 ## วัน 13 — TikTok / Reels (คำบรรยาย)
 
-📦 ส่งจาก Shopee | ร้านค้าของคุณบน Shopee
+📦 ส่งจาก Shopee | Orta Official
 
-สินค้าขายดีอันดับ 1
-คุณภาพดี ใช้งานได้จริง คุ้มราคา
+ชาไทยปรุงสำเร็จชนิดผง ตราโอต๊ะ สไตล์ภูเก็ต (15 ซอง/ถุง)
+คัดสรรชาคุณภาพ Ceylon & Oolong หอมมันกลมกล่อม รสชาติไทยแท้ ชงร้อนและเย็นได้
 
 กดลิงก์ร้าน 👇
 https://s.shopee.co.th/qjVyIXVuU?utm_source=tiktok&utm_medium=video&utm_campaign=organic_week_d13
@@ -155,12 +155,12 @@ https://s.shopee.co.th/qjVyIXVuU?utm_source=tiktok&utm_medium=video&utm_campaign
 
 ## วัน 14 — X (Twitter)
 
-ฝากติดตามร้าน ร้านค้าของคุณบน Shopee บน Shopee
-ของดี ราคาคุ้ม ส่งไว มีประกัน Shopee
+ฝากติดตามร้าน Orta Official บน Shopee
+ชาไทยตราโอต๊ะ สไตล์ภูเก็ต — หอมกลิ่นชาเข้มข้น หวานมันกำลังดี ชงร้อน–เย็นได้
 
 🛒 รวมสินค้าขายดี + โปรอัปเดตทุกวัน
 https://s.shopee.co.th/qjVyIXVuU?utm_source=twitter&utm_medium=social&utm_campaign=organic_week_d14
 
-#ShopeeTH #ช้อปออนไลน์ #ของดีบอกต่อ #ShopeeFreeShipping
+#Orta #โอต๊ะ #ชาไทย #ชาไทยภูเก็ต #PhuketStyle #ShopeeTH #ของฝากภูเก็ต
 
 ---

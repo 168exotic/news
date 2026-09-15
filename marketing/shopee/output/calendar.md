@@ -1,4 +1,4 @@
-# ปฏิทินโปรโมต 14 วัน — ร้านค้าของคุณบน Shopee
+# ปฏิทินโปรโมต 14 วัน — Orta Official
 
 ลิงก์ร้าน: https://s.shopee.co.th/qjVyIXVuU
 

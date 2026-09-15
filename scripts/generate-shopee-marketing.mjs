@@ -149,6 +149,12 @@ function buildListingSeoHints(cfg) {
   writeFileSync(join(OUTPUT_DIR, 'listing-seo-samples.md'), lines.join('\n'), 'utf8');
 }
 
+function buildContentIdeas(cfg) {
+  if (!cfg.contentIdeas?.length) return;
+  const lines = ['# ไอเดียคอนเทนต์ Orta (ไม่เสียค่าโฆษณา)', '', ...cfg.contentIdeas.map((x) => `- ${x}`), ''];
+  writeFileSync(join(OUTPUT_DIR, 'content-ideas.md'), lines.join('\n'), 'utf8');
+}
+
 function main() {
   const { config, days } = parseArgs();
   if (!existsSync(config)) {
@@ -161,6 +167,7 @@ function main() {
   buildChecklist(cfg);
   buildUtmSheet(cfg);
   buildListingSeoHints(cfg);
+  buildContentIdeas(cfg);
   console.log('สร้างไฟล์แล้วที่', OUTPUT_DIR);
   console.log('- calendar.md, checklist.md, utm-links.md, listing-seo-samples.md');
   console.log(`- posts-day-01.txt … posts-day-${String(days).padStart(2, '0')}.txt`);
