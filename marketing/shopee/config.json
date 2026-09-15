@@ -1,0 +1,35 @@
+{
+  "shopName": "ร้านค้าของคุณบน Shopee",
+  "shopUrl": "https://s.shopee.co.th/qjVyIXVuU",
+  "shopUsername": "",
+  "tagline": "ของดี ราคาคุ้ม ส่งไว มีประกัน Shopee",
+  "categories": ["สินค้าขายดี", "โปรโมชัน", "สินค้าใหม่"],
+  "hashtags": ["#ShopeeTH", "#ช้อปออนไลน์", "#ของดีบอกต่อ", "#ShopeeFreeShipping"],
+  "products": [
+    {
+      "name": "สินค้าขายดีอันดับ 1",
+      "benefit": "คุณภาพดี ใช้งานได้จริง คุ้มราคา",
+      "priceHint": "เริ่มต้นหลักสิบ",
+      "keywords": ["ของใช้ในบ้าน", "ของแท้", "ส่งไว"]
+    },
+    {
+      "name": "สินค้าโปรโมชันพิเศษ",
+      "benefit": "ลดราคาช่วงนี้ จำกัดจำนวน",
+      "priceHint": "โปรวันนี้เท่านั้น",
+      "keywords": ["โปรโมชัน", "ลดราคา", "Shopee"]
+    },
+    {
+      "name": "สินค้าใหม่ล่าสุด",
+      "benefit": "มาใหม่ในร้าน ทดลองแล้วชอบ",
+      "priceHint": "ราคาเปิดตัว",
+      "keywords": ["สินค้าใหม่", "ของมาใหม่"]
+    }
+  ],
+  "sellerCenterChecklist": {
+    "dailyBoostSlots": 5,
+    "replyChatWithinMinutes": 15,
+    "livePerWeek": 2,
+    "newListingPhotosMin": 5,
+    "videoPerTopSku": true
+  }
+}

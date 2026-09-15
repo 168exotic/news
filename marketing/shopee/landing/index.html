@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ช้อปที่ร้านเราบน Shopee — ปลอดภัย ส่งไว</title>
+  <meta name="description" content="รวมสินค้าขายดีและโปรโมชันบน Shopee สั่งง่าย มีระบบคุ้มครองผู้ซื้อ">
+  <meta property="og:title" content="ช้อปที่ร้านเราบน Shopee">
+  <meta property="og:description" content="ของดี ราคาคุ้ม ส่งไว — กดเพื่อเข้าร้าน Shopee">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://s.shopee.co.th/qjVyIXVuU">
+  <meta name="theme-color" content="#ee4d2d">
+  <style>
+    :root { --shopee: #ee4d2d; --bg: #fff5f2; --text: #222; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: linear-gradient(160deg, var(--bg), #fff);
+      color: var(--text);
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+    }
+    .card {
+      max-width: 420px;
+      width: 100%;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 12px 40px rgba(238, 77, 45, 0.12);
+      padding: 1.75rem 1.5rem 1.5rem;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--shopee);
+      background: #ffe8e2;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 0.75rem;
+    }
+    h1 { font-size: 1.35rem; line-height: 1.35; margin: 0 0 0.5rem; }
+    p { margin: 0 0 1.25rem; color: #555; font-size: 0.95rem; line-height: 1.5; }
+    ul {
+      text-align: left;
+      margin: 0 0 1.25rem;
+      padding-left: 1.2rem;
+      color: #444;
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+    .cta {
+      display: block;
+      width: 100%;
+      padding: 0.95rem 1rem;
+      background: var(--shopee);
+      color: #fff;
+      font-size: 1.05rem;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(238, 77, 45, 0.35);
+    }
+    .cta:active { transform: scale(0.98); }
+    .fine { margin-top: 1rem; font-size: 0.75rem; color: #888; }
+    .share { margin-top: 0.75rem; font-size: 0.85rem; }
+    .share button {
+      background: none;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 0.45rem 0.75rem;
+      cursor: pointer;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <span class="badge">Shopee Thailand</span>
+    <h1 id="shopTitle">ช้อปที่ร้านเราบน Shopee</h1>
+    <p id="shopTagline">ของดี ราคาคุ้ม ส่งไว มีระบบคุ้มครองผู้ซื้อของ Shopee</p>
+    <ul>
+      <li>สั่งผ่านแอป/เว็บ Shopee ปลอดภัย</li>
+      <li>ตรวจสอบรีวิวและคะแนนร้านก่อนชำระเงิน</li>
+      <li>กดปุ่มด้านล่างเพื่อเข้าร้านโดยตรง</li>
+    </ul>
+    <a class="cta" id="shopLink" href="https://s.shopee.co.th/qjVyIXVuU?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=free_promo">เข้าร้านบน Shopee</a>
+    <div class="share">
+      <button type="button" id="copyBtn">คัดลอกลิงก์แชร์</button>
+    </div>
+    <p class="fine">หน้านี้ใช้แชร์ใน LINE / Facebook / TikTok bio ได้ฟรี — โฮสต์บน GitHub Pages หรือเว็บของคุณ</p>
+  </main>
+  <script>
+    const SHOP_URL = 'https://s.shopee.co.th/qjVyIXVuU';
+    const params = new URLSearchParams(location.search);
+    const title = params.get('title');
+    const tagline = params.get('tagline');
+    if (title) document.getElementById('shopTitle').textContent = decodeURIComponent(title);
+    if (tagline) document.getElementById('shopTagline').textContent = decodeURIComponent(tagline);
+    const utm = params.get('utm') || 'landing';
+    const href = SHOP_URL + (SHOP_URL.includes('?') ? '&' : '?') + 'utm_source=' + encodeURIComponent(utm) + '&utm_medium=web&utm_campaign=free_promo';
+    document.getElementById('shopLink').href = href;
+    document.getElementById('copyBtn').addEventListener('click', async () => {
+      const share = location.href.split('?')[0] || location.href;
+      try {
+        await navigator.clipboard.writeText(share);
+        document.getElementById('copyBtn').textContent = 'คัดลอกแล้ว ✓';
+      } catch {
+        prompt('คัดลอกลิงก์นี้:', share);
+      }
+    });
+  </script>
+</body>
+</html>
