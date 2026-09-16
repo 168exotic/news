@@ -17,6 +17,13 @@ const DEFAULT_OUTPUT = join(ROOT, 'spaminthai-output');
 const SITE = 'https://spaminthai.com';
 const PER_PAGE = 6;
 
+const AFFILIATE_CSS = '<link rel="stylesheet" href="/assets/affiliate.css">';
+const AFFILIATE_SCRIPT = '<script src="/assets/affiliate.js"></script>';
+const AFF_SLOT_ARTICLE =
+  '<aside class="affiliate-slot" data-slot="article-mid" aria-label="โฆษณา"></aside>';
+const AFF_SLOT_NEWS_INDEX =
+  '<div class="affiliate-slot" data-slot="sidebar-top" aria-label="โฆษณา"></div>';
+
 const SITE_HEADER = `<header class="site-header">
   <div class="site-header__inner">
     <a href="/" class="site-brand">
@@ -146,6 +153,7 @@ function renderArticle(article) {
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@500&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/theme.css">
 <link rel="stylesheet" href="/assets/layout.css">
+${AFFILIATE_CSS}
 </head>
 <body>
 <article class="wrap">
@@ -153,6 +161,8 @@ function renderArticle(article) {
   <p class="meta">${formatThaiDate(article.date)}</p>
   <h1>${esc(article.title)}</h1>
   <p class="lead">${esc(article.lead)}</p>
+
+  ${AFF_SLOT_ARTICLE}
 
   ${body}
 
@@ -166,6 +176,7 @@ function renderArticle(article) {
   <p style="margin-top:24px">สงสัยเบอร์มิจฉาชีพ? <a href="/check">เช็คเบอร์ฟรี</a> หรือ <a href="/report">แจ้งเบาะแส</a></p>
   <a class="cta" href="/check">เช็คเบอร์โทรฟรี</a>
 </article>
+${AFFILIATE_SCRIPT}
 <script src="/assets/ga4.js" defer></script>
 </body>
 </html>`;
@@ -234,6 +245,7 @@ function renderIndexPage(articles, page, totalPages) {
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@500&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/theme.css">
 <link rel="stylesheet" href="/assets/layout.css">
+${AFFILIATE_CSS}
 <style>
 .news-index .card time { display:block; font-size:0.85rem; color:var(--muted,#888); margin-bottom:4px; }
 .news-index .sub { color:var(--muted,#888); margin-bottom:24px; }
@@ -252,11 +264,14 @@ ${SITE_HEADER}
   <h1>ข่าวสารคดีฉ้อโกง</h1>
   <p class="sub">รวมข่าวคดีฉ้อโกงออนไลน์และแก๊งคอลเซ็นเตอร์จากหลายแหล่ง เรียบเรียงเนื้อหาใหม่และอ้างอิงแหล่งที่มาทุกบทความ อัปเดตวันละ 3–4 เรื่อง</p>
 
+  ${AFF_SLOT_NEWS_INDEX}
+
   ${cards}
 
   ${renderPagination(page, totalPages)}
 </main>
 ${SITE_FOOTER}
+${AFFILIATE_SCRIPT}
 <script src="/assets/site.js" defer></script>
 <script src="/assets/ga4.js" defer></script>
 </body>

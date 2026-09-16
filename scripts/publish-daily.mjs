@@ -57,6 +57,11 @@ function main() {
     { stdio: 'inherit' }
   );
 
+  execSync(
+    `node ${join(ROOT, 'scripts/restore-spaminthai-ads.mjs')} --spaminthai-dir ${spaminthaiDir}`,
+    { stdio: 'inherit' }
+  );
+
   console.log(`Published ${queued.length} article(s)`);
 }
 
