@@ -24,6 +24,10 @@ concurrency:
   group: news-publish
   cancel-in-progress: false
 
+permissions:
+  contents: write
+  actions: write
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -32,6 +36,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: news
+          token: ${{ secrets.SPAMINTHAI_DEPLOY_TOKEN }}
 
       - name: Checkout spaminthai repo
         uses: actions/checkout@v4
@@ -58,28 +63,34 @@ jobs:
 
       - name: Commit and push news repo
         working-directory: news
+        env:
+          DEPLOY_TOKEN: ${{ secrets.SPAMINTHAI_DEPLOY_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${DEPLOY_TOKEN}@github.com/168exotic/news.git"
           git add -A
           if git diff --staged --quiet; then
             echo "No changes in news repo"
           else
             git commit -m "chore: publish news articles [skip ci]"
-            git push
+            git push origin HEAD:main
           fi
 
       - name: Commit and push spaminthai repo
         working-directory: spaminthai
+        env:
+          DEPLOY_TOKEN: ${{ secrets.SPAMINTHAI_DEPLOY_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${DEPLOY_TOKEN}@github.com/168exotic/spaminthai.git"
           git add -A
           if git diff --staged --quiet; then
             echo "No changes in spaminthai repo"
           else
             git commit -m "chore: update news section"
-            git push
+            git push origin HEAD:main
           fi
 
       - name: Trigger Cloudflare Pages deploy
