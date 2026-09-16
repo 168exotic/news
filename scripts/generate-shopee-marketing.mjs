@@ -136,17 +136,109 @@ function buildUtmSheet(cfg) {
 }
 
 function buildListingSeoHints(cfg) {
+  const seo = cfg.seo || {};
+  const primary = (seo.primaryKeywords || []).join(', ');
   const lines = [
-    '# ตัวอย่างชื่อสินค้า + คำอธิบาย (แก้ให้ตรงของจริง)',
+    '# SEO Shopee — Orta | ortaofficial | ชาภูเก็ต',
     '',
-    'หลักการ: คีย์เวิร์ดที่ลูกค้าพิมพ์ + จุดต่าง + ขนาด/สี/จำนวน',
+    'คีย์เวิร์ดหลัก: **Orta**, **ortaofficial**, **ชาภูเก็ต**, ชาไทยภูเก็ต, โอต๊ะ',
+    '',
+    '## โปรไฟล์ร้าน (วางใน Shopee → ตั้งค่าร้าน → คำอธิบายร้าน)',
+    '',
+    '```',
+    seo.shopBioShopee || `${cfg.shopName} ชาไทยภูเก็ต Orta ortaofficial`,
+    '```',
+    '',
+    '## รูปสินค้า — Alt / ข้อความบนรูป (ช่วยค้นหาในแอป)',
+    '',
+    '- Orta ชาภูเก็ต ชาไทยโอต๊ะ 15 ซอง',
+    '- ortaofficial ชาไทยสไตล์ภูเก็ต Ceylon Oolong',
+    '- ชงเย็น หอมมัน รสชาติไทยแท้ Phuket Signature',
     '',
   ];
+
+  const main = cfg.products[0];
+  if (main) {
+    lines.push(
+      '## SKU หลัก — ชื่อสินค้า (เลือก 1 ชื่อ ไม่เปลี่ยนบ่อย)',
+      '',
+      ...(main.shopeeTitleVariants || []).map((t, i) => `${i + 1}. ${t}`),
+      '',
+      '## SKU หลัก — รายละเอียดสินค้า (คัดลอกไป Shopee)',
+      '',
+      '```',
+      buildShopeeDescription(cfg, main),
+      '```',
+      '',
+    );
+  }
+
+  lines.push('---', '', '## สินค้าอื่น / คีย์เวิร์ดเสริม', '');
   for (const p of cfg.products) {
     const kw = (p.keywords || []).join(' ');
-    lines.push(`## ${p.name}`, '', `**ชื่อตัวอย่าง:** ${p.name} ${kw} ${p.benefit} ${p.priceHint}`, '', '**คำอธิบาย (ย่อ):**', `- ${p.benefit}`, '- ส่งจาก Shopee มีระบบคืนเงิน', '- ร้านตอบแชทเร็ว แพ็กของแน่น', `- คำค้น: ${kw}`, '', '---', '');
+    lines.push(`### ${p.name}`, '', `- คำค้น: ${kw}`, `- จุดขาย: ${p.benefit}`, '');
   }
+
+  lines.push(
+    '## คำค้นที่ควรมีในแชท/รีวิว (ช่วย long-tail)',
+    '',
+    '- Orta ชาภูเก็ต',
+    '- ortaofficial ชาไทย',
+    '- ชาไทยภูเก็ต 15 ซอง',
+    '- ของฝากภูเก็ต ชาไทย',
+    '',
+    `Secondary: ${(seo.secondaryKeywords || []).join(', ')}`,
+    '',
+  );
+
   writeFileSync(join(OUTPUT_DIR, 'listing-seo-samples.md'), lines.join('\n'), 'utf8');
+}
+
+function buildShopeeDescription(cfg, product) {
+  const seo = cfg.seo || {};
+  return [
+    '🍵 Orta | ortaofficial — ชาไทยตราโอต๊ะ สไตล์ภูเก็ต (ชาภูเก็ต)',
+    '',
+    product.benefit,
+    '',
+    '✅ ถุง 15 ซอง — ชงร้อนและเย็นได้',
+    '✅ คัดสรร Ceylon & Oolong · รสชาติไทยแท้ หอมมันกลมกล่อม',
+    '✅ Phuket Signature · เหมาะดื่มเองและเป็นของฝาก',
+    '',
+    'วิธีชงเย็น (แนะนำ): น้ำร้อน 120 ml ต่อ 1 ซอง → คน → น้ำแข็ง + นม',
+    'วิธีชงร้อน: น้ำร้อน 180 ml ต่อ 1 ซอง → คน → พร้อมดื่ม',
+    '',
+    '🔎 ค้นหา: Orta, ortaofficial, ชาภูเก็ต, ชาไทยภูเก็ต, โอต๊ะ',
+    '',
+    `ร้าน: ${cfg.shopName} บน Shopee Thailand`,
+    seo.metaDescription ? '' : '',
+  ]
+    .filter(Boolean)
+    .join('\n');
+}
+
+function buildSeoPasteFiles(cfg) {
+  const main = cfg.products[0];
+  const seo = cfg.seo || {};
+  if (main?.shopeeTitleVariants?.[0]) {
+    writeFileSync(join(OUTPUT_DIR, 'shopee-title.txt'), main.shopeeTitleVariants[0] + '\n', 'utf8');
+  }
+  if (main) {
+    writeFileSync(join(OUTPUT_DIR, 'shopee-description.txt'), buildShopeeDescription(cfg, main) + '\n', 'utf8');
+  }
+  if (seo.shopBioShopee) {
+    writeFileSync(join(OUTPUT_DIR, 'shopee-shop-bio.txt'), seo.shopBioShopee + '\n', 'utf8');
+  }
+  const kwLines = [
+    '# คีย์เวิร์ด Orta SEO',
+    '',
+    ...(seo.primaryKeywords || []).map((k) => `primary: ${k}`),
+    ...(seo.secondaryKeywords || []).map((k) => `secondary: ${k}`),
+    '',
+    'Shopee search: Orta | ortaofficial | ชาภูเก็ต | ชาไทยภูเก็ต | โอต๊ะ',
+    '',
+  ];
+  writeFileSync(join(OUTPUT_DIR, 'seo-keywords.txt'), kwLines.join('\n'), 'utf8');
 }
 
 function buildContentIdeas(cfg) {
@@ -167,9 +259,10 @@ function main() {
   buildChecklist(cfg);
   buildUtmSheet(cfg);
   buildListingSeoHints(cfg);
+  buildSeoPasteFiles(cfg);
   buildContentIdeas(cfg);
   console.log('สร้างไฟล์แล้วที่', OUTPUT_DIR);
-  console.log('- calendar.md, checklist.md, utm-links.md, listing-seo-samples.md');
+  console.log('- listing-seo-samples.md, shopee-title.txt, shopee-description.txt, shopee-shop-bio.txt, seo-keywords.txt');
   console.log(`- posts-day-01.txt … posts-day-${String(days).padStart(2, '0')}.txt`);
 }
 

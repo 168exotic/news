@@ -9,19 +9,19 @@
 ✅ สั่งใน Shopee ปลอดภัย มีระบบคืนเงิน
 👉 https://s.shopee.co.th/qjVyIXVuU?utm_source=facebook&utm_medium=group&utm_campaign=organic_week_d1
 
-#Orta #โอต๊ะ #ชาไทย #ชาไทยภูเก็ต #PhuketStyle #ShopeeTH #ของฝากภูเก็ต
+#Orta #ortaofficial #โอต๊ะ #ชาภูเก็ต #ชาไทยภูเก็ต #ชาไทย #PhuketStyle #ShopeeTH
 
 ---
 
 ## วัน 2 — LINE OpenChat / สตอรี่
 
-ใครกำลังหา ชาไทยเย็น แนะนำตัวนี้เลย
+ใครกำลังหา Orta แนะนำตัวนี้เลย
 「ชาไทยโอต๊ะ แบบเย็น (สูตรแนะนำจากร้าน)」— ใส่น้ำร้อน 120 ml ต่อ 1 ซอง คนให้เข้ากัน ใส่น้ำแข็งและนม — ได้ชาไทยเชิดแบบร้าน
 
 ช้อปที่ร้าน Orta Official
 https://s.shopee.co.th/qjVyIXVuU?utm_source=line&utm_medium=social&utm_campaign=organic_week_d2
 
-#Orta #โอต๊ะ #ชาไทย
+#Orta #ortaofficial #โอต๊ะ
 
 ---
 
@@ -45,7 +45,7 @@ https://s.shopee.co.th/qjVyIXVuU?utm_source=tiktok&utm_medium=video&utm_campaign
 🛒 รวมสินค้าขายดี + โปรอัปเดตทุกวัน
 https://s.shopee.co.th/qjVyIXVuU?utm_source=twitter&utm_medium=social&utm_campaign=organic_week_d4
 
-#Orta #โอต๊ะ #ชาไทย #ชาไทยภูเก็ต #PhuketStyle #ShopeeTH #ของฝากภูเก็ต
+#Orta #ortaofficial #โอต๊ะ #ชาภูเก็ต #ชาไทยภูเก็ต #ชาไทย #PhuketStyle #ShopeeTH
 
 ---
 
@@ -67,19 +67,19 @@ https://s.shopee.co.th/qjVyIXVuU?utm_source=twitter&utm_medium=social&utm_campai
 ✅ สั่งใน Shopee ปลอดภัย มีระบบคืนเงิน
 👉 https://s.shopee.co.th/qjVyIXVuU?utm_source=facebook&utm_medium=group&utm_campaign=organic_week_d6
 
-#Orta #โอต๊ะ #ชาไทย #ชาไทยภูเก็ต #PhuketStyle #ShopeeTH #ของฝากภูเก็ต
+#Orta #ortaofficial #โอต๊ะ #ชาภูเก็ต #ชาไทยภูเก็ต #ชาไทย #PhuketStyle #ShopeeTH
 
 ---
 
 ## วัน 7 — LINE OpenChat / สตอรี่
 
-ใครกำลังหา ชาไทยสำเร็จรูป แนะนำตัวนี้เลย
+ใครกำลังหา Orta แนะนำตัวนี้เลย
 「ชาไทยปรุงสำเร็จชนิดผง ตราโอต๊ะ สไตล์ภูเก็ต (15 ซอง/ถุง)」— คัดสรรชาคุณภาพ Ceylon & Oolong หอมมันกลมกล่อม รสชาติไทยแท้ ชงร้อนและเย็นได้
 
 ช้อปที่ร้าน Orta Official
 https://s.shopee.co.th/qjVyIXVuU?utm_source=line&utm_medium=social&utm_campaign=organic_week_d7
 
-#Orta #โอต๊ะ #ชาไทย
+#Orta #ortaofficial #โอต๊ะ
 
 ---
 
@@ -103,7 +103,7 @@ https://s.shopee.co.th/qjVyIXVuU?utm_source=tiktok&utm_medium=video&utm_campaign
 🛒 รวมสินค้าขายดี + โปรอัปเดตทุกวัน
 https://s.shopee.co.th/qjVyIXVuU?utm_source=twitter&utm_medium=social&utm_campaign=organic_week_d9
 
-#Orta #โอต๊ะ #ชาไทย #ชาไทยภูเก็ต #PhuketStyle #ShopeeTH #ของฝากภูเก็ต
+#Orta #ortaofficial #โอต๊ะ #ชาภูเก็ต #ชาไทยภูเก็ต #ชาไทย #PhuketStyle #ShopeeTH
 
 ---
 
@@ -125,19 +125,19 @@ https://s.shopee.co.th/qjVyIXVuU?utm_source=twitter&utm_medium=social&utm_campai
 ✅ สั่งใน Shopee ปลอดภัย มีระบบคืนเงิน
 👉 https://s.shopee.co.th/qjVyIXVuU?utm_source=facebook&utm_medium=group&utm_campaign=organic_week_d11
 
-#Orta #โอต๊ะ #ชาไทย #ชาไทยภูเก็ต #PhuketStyle #ShopeeTH #ของฝากภูเก็ต
+#Orta #ortaofficial #โอต๊ะ #ชาภูเก็ต #ชาไทยภูเก็ต #ชาไทย #PhuketStyle #ShopeeTH
 
 ---
 
 ## วัน 12 — LINE OpenChat / สตอรี่
 
-ใครกำลังหา ชาไทยร้อน แนะนำตัวนี้เลย
+ใครกำลังหา Orta แนะนำตัวนี้เลย
 「ชาไทยโอต๊ะ แบบร้อน」— ชงร้อน 180 ml ต่อซอง หอมชาเข้ม หวานมันนุ่ม เหมาะเช้า–บ่าย
 
 ช้อปที่ร้าน Orta Official
 https://s.shopee.co.th/qjVyIXVuU?utm_source=line&utm_medium=social&utm_campaign=organic_week_d12
 
-#Orta #โอต๊ะ #ชาไทย
+#Orta #ortaofficial #โอต๊ะ
 
 ---
 
@@ -161,6 +161,6 @@ https://s.shopee.co.th/qjVyIXVuU?utm_source=tiktok&utm_medium=video&utm_campaign
 🛒 รวมสินค้าขายดี + โปรอัปเดตทุกวัน
 https://s.shopee.co.th/qjVyIXVuU?utm_source=twitter&utm_medium=social&utm_campaign=organic_week_d14
 
-#Orta #โอต๊ะ #ชาไทย #ชาไทยภูเก็ต #PhuketStyle #ShopeeTH #ของฝากภูเก็ต
+#Orta #ortaofficial #โอต๊ะ #ชาภูเก็ต #ชาไทยภูเก็ต #ชาไทย #PhuketStyle #ShopeeTH
 
 ---
