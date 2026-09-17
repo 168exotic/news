@@ -1,0 +1,106 @@
+{
+  "shopName": "Orta official ร้านค้าอย่างเป็นทางการ",
+  "brandName": "ORTA",
+  "brandNameTh": "โอต๊ะ",
+  "shopeeShopUrl": "https://shopee.co.th/ortaofficial",
+  "shopeeShopUsername": "ortaofficial",
+  "shopeeShortUrl": "https://s.shopee.co.th/2LYAaOVXKc",
+  "officialWebsite": "https://ortathailand.com/",
+  "locale": "th-TH",
+  "defaultSiteUrl": "https://orta-shopee.onrender.com",
+  "defaultOgImage": "/assets/thai-tea-hero.jpg",
+  "tagline": "ชาไทย • กาแฟ • ผลไม้ รสชาติเอกลักษณ์ภูเก็ต — A Taste of Phuket",
+  "about": "ร้าน Orta official บน Shopee จำหน่ายผลิตภัณฑ์ ORTA (โอต๊ะ) ชาไทยพร้อมชง กาแฟ 3in1 ชาดำ และเครื่องดื่มสไตล์ภูเก็ต คัดสรรคุณภาพ ชงได้ทั้งร้อนและเย็น เหมาะทั้งดื่มเองและทำเมนูร้าน",
+  "keywords": [
+    "ORTA",
+    "โอต๊ะ",
+    "Orta official",
+    "ortaofficial",
+    "shopee.co.th/ortaofficial",
+    "ชาไทยสำเร็จรูป",
+    "ชาไทยพร้อมชง",
+    "ชาไทยสไตล์ภูเก็ต",
+    "Instant Thai Tea Mix",
+    "กาแฟ 3in1",
+    "ชาดำ ORTA",
+    "ชาไทย Shopee",
+    "ของฝากภูเก็ต",
+    "เครื่องดื่มสำเร็จรูป"
+  ],
+  "features": [
+    "รสชาติไทยแท้ ๆ สไตล์ภูเก็ต (Phuket Old Town)",
+    "ชงง่าย ได้ทั้งชาไทยร้อน ชาไทยเย็น ปั่น และไข่มุก",
+    "มีทั้งสาย COFFEE AND TEA และ COFFEE & TEA NO SUGAR",
+    "สั่งซื้อผ่าน Shopee — จัดส่งรวดเร็ว ปลอดภัย"
+  ],
+  "categories": [
+    { "name": "COFFEE AND TEA", "description": "ชาไทย กาแฟ 3in1 ชาดำ และกาแฟผสมชาไทย" },
+    { "name": "COFFEE & TEA NO SUGAR", "description": "สายไม่เติมน้ำตาล สำหรับผู้ควบคุมน้ำตาล" }
+  ],
+  "products": [
+    {
+      "slug": "instant-thai-tea-phuket",
+      "name": "ORTA Instant Thai Tea Mix ชาไทยสไตล์ภูเก็ต",
+      "category": "ชาไทย",
+      "image": "/assets/thai-tea-hero.jpg",
+      "shopeeUrl": "https://shopee.co.th/ortaofficial",
+      "shortUrl": "https://s.shopee.co.th/2LYAaOVXKc",
+      "description": "ชาไทยพร้อมชงดื่ม สไตล์ภูเก็ต หอมกลิ่นชาเข้มข้น หวาน มัน กำลังดี 1 ถุง 15 ซอง (450 g / ซองละ 30 g)",
+      "highlights": [
+        "Phuket Signature — สูตรชาไทยแบบเมืองเก่าภูเก็ต",
+        "คัดสรรชาคุณภาพดี (Ceylon Oolong)",
+        "ชงได้ทั้งร้อนและเย็น",
+        "ทำเมนูได้หลากหลาย: ชาไทยเย็น ปั่น ไข่มุก บิงซู"
+      ],
+      "keywords": ["ชาไทย ORTA", "ชาไทยสำเร็จรูป", "ชาไทยภูเก็ต", "Instant Thai Tea Mix"]
+    },
+    {
+      "slug": "thai-tea-menus",
+      "name": "เมนูชาไทย ORTA ทำได้ง่ายที่บ้าน",
+      "category": "ไอเดียเมนู",
+      "image": "/assets/thai-tea-menus.jpg",
+      "shopeeUrl": "https://shopee.co.th/ortaofficial",
+      "description": "ชาไทยโอต๊ะทำเมนูได้หลากหลาย — ชาไทยเย็น ชาไทยปั่น ชาไทยไข่มุก ชาไทยร้อน และบิงซูชาไทย",
+      "highlights": [
+        "ชาไทยเย็น / Thai Tea Iced",
+        "ชาไทยปั่น / Thai Tea Frappe",
+        "ชาไทยไข่มุก / Thai Tea Bubble",
+        "ชาไทยร้อน และบิงซูชาไทย"
+      ],
+      "keywords": ["สูตรชาไทย", "ชาไทยไข่มุก", "ชาไทยปั่น", "เมนูชาไทย"]
+    },
+    {
+      "slug": "coffee-and-tea-line",
+      "name": "ORTA Coffee & Tea — กาแฟและชาครบในร้าน",
+      "category": "กาแฟและชา",
+      "image": "/assets/shop-banner.jpg",
+      "shopeeUrl": "https://shopee.co.th/ortaofficial",
+      "description": "ครบทุกความอร่อยจากโอต๊ะ: ชาไทย กาแฟ 3in1 ชาดำ กาแฟดำ และกาแฟผสมชาไทย ในร้าน Orta official บน Shopee",
+      "highlights": [
+        "Instant Thai Tea Mix และชาไทยกล่อง",
+        "Instant Coffee Mix 3in1",
+        "Black Tea Mix และ Black Coffee",
+        "Coffee mixed with Thai Tea"
+      ],
+      "keywords": ["กาแฟ 3in1 ORTA", "ชาดำ ORTA", "Orta official Shopee"]
+    }
+  ],
+  "faq": [
+    {
+      "q": "ร้าน Orta official อยู่ที่ไหน?",
+      "a": "สั่งซื้อได้ที่ https://shopee.co.th/ortaofficial (ร้าน Orta official) แบรนด์ ORTA (โอต๊ะ) มีเว็บไซต์อย่างเป็นทางการที่ ortathailand.com"
+    },
+    {
+      "q": "ชาไทย ORTA ชงยังไง?",
+      "a": "ใช้ผงชาไทย ORTA 1 ซอง (30 g) ผสมน้ำร้อนหรือน้ำแข็งตามสูตรบนซอง ปรับความหวาน/ความเข้มได้ตามชอบ ชงร้อนหรือเย็นก็ได้"
+    },
+    {
+      "q": "มีสินค้าไม่เติมน้ำตาลไหม?",
+      "a": "ร้านมีหมวด COFFEE & TEA NO SUGAR สำหรับผู้ที่ต้องการควบคุมน้ำตาล ดูรายการใน Shopee ที่หมวดสินค้า"
+    },
+    {
+      "q": "ทำไมควรซื้อผ่าน Shopee?",
+      "a": "Shopee มีระบบชำระเงิน การจัดส่ง และการคุ้มครองผู้ซื้อตามเงื่อนไขของแพลตฟอร์ม"
+    }
+  ]
+}

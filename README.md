@@ -62,3 +62,18 @@ node scripts/publish-daily.mjs --count 1 --spaminthai-dir ../spaminthai
 | Secret | คำอธิบาย |
 |--------|----------|
 | `SPAMINTHAI_DEPLOY_TOKEN` | GitHub PAT ที่มีสิทธิ์ push ไปยัง `168exotic/spaminthai` |
+
+## SEO ร้าน Shopee (landing page)
+
+โฟลเดอร์ `shop-seo/` สร้างหน้าเว็บ SEO ภายนอก (Google/Bing) สำหรับร้าน **Orta official** / แบรนด์ **ORTA (โอต๊ะ)** — ร้าน Shopee: [https://shopee.co.th/ortaofficial](https://shopee.co.th/ortaofficial)
+
+- แก้ข้อมูลร้านใน `shop-seo/config.json` (สินค้า, คีย์เวิร์ด, รูปใน `shop-seo/assets/`)
+- คำแนะนำชื่อ/รายละเอียดใน Shopee Seller Centre: `shop-seo/shopee-listing-seo.json`
+- สร้างไฟล์ static:
+
+```bash
+SITE_URL=https://โดเมนของคุณ.com npm run shop-seo:build
+# ผลลัพธ์อยู่ที่ shop-seo/dist/
+```
+
+Deploy บน Render ได้จาก `render.yaml` (Static Site) — ตั้ง env `SITE_URL` ให้ตรงกับ URL จริง แล้วส่ง sitemap ไป [Google Search Console](https://search.google.com/search-console)

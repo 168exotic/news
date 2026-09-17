@@ -1,0 +1,59 @@
+{
+  "shopProfile": {
+    "shopDisplayName": "Orta official",
+    "shopeeShopUrl": "https://shopee.co.th/ortaofficial",
+    "recommendedShopName": "Orta official | ORTA โอต๊ะ ชาไทย กาแฟ ภูเก็ต",
+    "recommendedBio": "ร้านอย่างเป็นทางการ ORTA (โอต๊ะ) ชาไทยสไตล์ภูเก็ต กาแฟ 3in1 ชาดำ ผลไม้ A Taste of Phuket · จัดส่งเร็ว · ของแท้",
+    "coverImageTips": [
+      "ใช้ภาพ \"ครบทุกความอร่อยจากโอต๊ะ\" พร้อมโลโก้ ORTA",
+      "ใส่คำว่า ชาไทย • กาแฟ • ผลไม้ รสชาติภูเก็ต ให้อ่านง่ายบนมือถือ"
+    ]
+  },
+  "listings": [
+    {
+      "productKey": "instant-thai-tea-mix",
+      "recommendedTitle": "ORTA ชาไทยสำเร็จรูป สไตล์ภูเก็ต 15ซอง | Instant Thai Tea Mix โอต๊ะ Phuket",
+      "recommendedDescriptionSections": [
+        "【แบรนด์】ORTA (โอต๊ะ) — A Taste of Phuket",
+        "【สินค้า】ชาไทยพร้อมชงดื่ม สไตล์ภูเก็ต หอม หวาน มัน เข้มข้น",
+        "【บรรจุ】1 ถุง 15 ซอง | Net Wt 450 g (ซองละ 30 g)",
+        "【จุดเด่น】คัดสรรชาคุณภาพ ชงร้อน/เย็นได้ ทำเมนูชาไทยไข่มุก ปั่น บิงซู",
+        "【เหมาะกับ】ดื่มเอง ร้านกาแฟ ของฝากจากภูเก็ต"
+      ],
+      "searchKeywordsInTitle": [
+        "ชาไทย",
+        "ORTA",
+        "โอต๊ะ",
+        "ชาไทยสำเร็จรูป",
+        "ภูเก็ต",
+        "Instant Thai Tea",
+        "ชาไทยพร้อมชง"
+      ],
+      "hashtagsForShopeeLive": [
+        "#ORTA",
+        "#ชาไทย",
+        "#โอต๊ะ",
+        "#ภูเก็ต",
+        "#ชาไทยไข่มุก",
+        "#Shopee"
+      ]
+    },
+    {
+      "productKey": "coffee-3in1",
+      "recommendedTitle": "ORTA กาแฟ 3in1 โกปี้อูเล้ง | Instant Coffee Mix โอต๊ะ",
+      "searchKeywordsInTitle": ["กาแฟ 3in1", "ORTA", "โอต๊ะ", "กาแฟสำเร็จรูป"]
+    },
+    {
+      "productKey": "black-tea",
+      "recommendedTitle": "ORTA Black Tea Mix ชาดำสำเร็จรูป โอต๊ะ",
+      "searchKeywordsInTitle": ["ชาดำ", "ORTA", "Black Tea Mix"]
+    }
+  ],
+  "weeklyActions": [
+    "อัปโหลด Shopee Video สาธิตชงชาไทยเย็น/ไข่มุก (เพิ่มเวลาดูในหน้าร้าน)",
+    "จัดสินค้าเป็นหมวด COFFEE AND TEA และ NO SUGAR ให้ชื่อหมวดตรงคำค้นหา",
+    "ใส่ชื่อสินค้าทั้งไทยและ ORTA / Instant Thai Tea Mix",
+    "ใช้รูปปกที่มีข้อความ 15 ซอง / 450g และ Phuket Style",
+    "เข้าร่วมโปร Shopee ที่ร้านเข้าได้ และตอบแชทให้เร็ว"
+  ]
+}

@@ -6,6 +6,7 @@
   "description": "News content pipeline for spaminthai.com/news",
   "scripts": {
     "generate": "node scripts/generate-news-html.mjs",
-    "publish": "node scripts/publish-daily.mjs --count 1 --spaminthai-dir ./spaminthai"
+    "publish": "node scripts/publish-daily.mjs --count 1 --spaminthai-dir ./spaminthai",
+    "shop-seo:build": "node shop-seo/scripts/build.mjs"
   }
 }
