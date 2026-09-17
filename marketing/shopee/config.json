@@ -1,0 +1,78 @@
+{
+  "shopName": "Orta Official",
+  "shopUrl": "https://s.shopee.co.th/qjVyIXVuU",
+  "shopUsername": "ortaofficial",
+  "tagline": "ชาไทยตราโอต๊ะ สไตล์ภูเก็ต — หอมกลิ่นชาเข้มข้น หวานมันกำลังดี ชงร้อน–เย็นได้",
+  "categories": ["ชาไทย", "ชาภูเก็ต", "เครื่องดื่ม", "ของฝากภูเก็ต"],
+  "seo": {
+    "primaryKeywords": ["Orta", "ortaofficial", "ชาภูเก็ต", "ชาไทยภูเก็ต", "โอต๊ะ"],
+    "secondaryKeywords": [
+      "ชาไทยสำเร็จรูป",
+      "ชาไทยปรุงสำเร็จ",
+      "ชาไทยภูเก็ต",
+      "ของฝากภูเก็ต",
+      "Phuket tea",
+      "Ceylon Oolong",
+      "Orta Official"
+    ],
+    "shopBioShopee": "Orta | ortaofficial — ชาไทยตราโอต๊ะ สไตล์ภูเก็ต (ชาภูเก็ต) คัดสรร Ceylon & Oolong หอมมันกลมกล่อม ชงร้อน–เย็น ถุง 15 ซอง สั่งง่าย ส่งเร็ว",
+    "metaTitle": "Orta ortaofficial ชาภูเก็ต | ชาไทยโอต๊ะ สไตล์ภูเก็ต 15 ซอง",
+    "metaDescription": "Orta Official (ortaofficial) ชาไทยปรุงสำเร็จ ชาภูเก็ต สไตล์ภูเก็ต หอมชาเข้ม หวานมันกำลังดี Ceylon & Oolong ชงร้อนเย็น สั่งบน Shopee"
+  },
+  "hashtags": [
+    "#Orta",
+    "#ortaofficial",
+    "#โอต๊ะ",
+    "#ชาภูเก็ต",
+    "#ชาไทยภูเก็ต",
+    "#ชาไทย",
+    "#PhuketStyle",
+    "#ShopeeTH"
+  ],
+  "products": [
+    {
+      "name": "ชาไทยปรุงสำเร็จชนิดผง ตราโอต๊ะ สไตล์ภูเก็ต (15 ซอง/ถุง)",
+      "benefit": "คัดสรรชาคุณภาพ Ceylon & Oolong หอมมันกลมกล่อม รสชาติไทยแท้ ชงร้อนและเย็นได้",
+      "priceHint": "ซื้อเป็นถุง 15 ซอง คุ้มกว่าซื้อทีละแก้ว",
+      "keywords": [
+        "Orta",
+        "ortaofficial",
+        "ชาภูเก็ต",
+        "ชาไทยภูเก็ต",
+        "ชาไทยสำเร็จรูป",
+        "โอต๊ะ",
+        "Phuket Signature"
+      ],
+      "shopeeTitleVariants": [
+        "Orta ชาภูเก็ต ชาไทยโอต๊ะ สำเร็จรูป 15ซอง | ortaofficial สไตล์ภูเก็ต Ceylon Oolong",
+        "ชาไทยภูเก็ต Orta Official ตราโอต๊ะ ปรุงสำเร็จ 15 ซอง ชงร้อนเย็น | ortaofficial",
+        "ortaofficial Orta ชาไทยสไตล์ภูเก็ต ชาภูเก็ต ถุง 15 ซอง หอมมันกลมกล่อม"
+      ]
+    },
+    {
+      "name": "ชาไทยโอต๊ะ แบบเย็น (สูตรแนะนำจากร้าน)",
+      "benefit": "ใส่น้ำร้อน 120 ml ต่อ 1 ซอง คนให้เข้ากัน ใส่น้ำแข็งและนม — ได้ชาไทยเชิดแบบร้าน",
+      "priceHint": "ทำเองที่บ้าน รสชาติคงที่ทุกแก้ว",
+      "keywords": ["Orta", "ชาไทยเย็น", "ชาภูเก็ต", "สูตรชงชาไทย", "ortaofficial"]
+    },
+    {
+      "name": "ชาไทยโอต๊ะ แบบร้อน",
+      "benefit": "ชงร้อน 180 ml ต่อซอง หอมชาเข้ม หวานมันนุ่ม เหมาะเช้า–บ่าย",
+      "priceHint": "อุ่นไอใน rainy day ไม่ต้องออกไปซื้อข้างนอก",
+      "keywords": ["Orta", "ชาไทยร้อน", "ชาภูเก็ต", "โอต๊ะ", "ortaofficial"]
+    }
+  ],
+  "sellerCenterChecklist": {
+    "dailyBoostSlots": 5,
+    "replyChatWithinMinutes": 15,
+    "livePerWeek": 2,
+    "newListingPhotosMin": 5,
+    "videoPerTopSku": true
+  },
+  "contentIdeas": [
+    "วิดีโอ 15 วิ: ชง 1 ซอง → ใส่น้ำแข็ง → เทนม → แคปชันใส่ Orta ortaofficial ชาภูเก็ต",
+    "โพสต์ before/after พร้อม alt text: Orta ชาไทยภูเก็ต สไตล์ภูเก็ต",
+    "Live: ค้นหาใน Shopee คำว่า ชาภูเก็ต Orta แล้วชวนดูวิธีชง",
+    "ใส่คำ ortaofficial ในรายละเอียดร้าน + ชื่อสินค้าต้นประโยค"
+  ]
+}

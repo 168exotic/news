@@ -1,0 +1,16 @@
+# คีย์เวิร์ด Orta SEO
+
+primary: Orta
+primary: ortaofficial
+primary: ชาภูเก็ต
+primary: ชาไทยภูเก็ต
+primary: โอต๊ะ
+secondary: ชาไทยสำเร็จรูป
+secondary: ชาไทยปรุงสำเร็จ
+secondary: ชาไทยภูเก็ต
+secondary: ของฝากภูเก็ต
+secondary: Phuket tea
+secondary: Ceylon Oolong
+secondary: Orta Official
+
+Shopee search: Orta | ortaofficial | ชาภูเก็ต | ชาไทยภูเก็ต | โอต๊ะ
